@@ -2,6 +2,7 @@ import '../index.scss';
 import { useState } from 'react';
 
 const AddTodo = ({ addTodoToList }) => {
+    //destructure vs props.funcName
     const [todoTitle, setTodoTitle] = useState("");
 
     const handleAddTodo = (e) => {
