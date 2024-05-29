@@ -1,4 +1,4 @@
-import './index.scss';
+import './App.scss';
 import AddTodo from './components/AddTodo';
 import TodoCard from './components/TodoCard';
 

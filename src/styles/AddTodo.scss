@@ -1,0 +1,57 @@
+.add-todo {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto;
+    row-gap: 10px;
+  
+    & .title {
+      font-family: 'ptmono';
+      font-size: 18px;
+      color: #E5E5E5;
+      align-self: flex-start;
+    }
+  
+    &-actions {
+      display: flex;
+      width: 100%;
+      column-gap: 15px;
+  
+      input {
+        width: 80%;
+        height: 50px;
+        border: 2px solid #17182d;
+        color: #E5E5E5;
+        background-color: #252a52;
+        border-radius: 6px;
+        padding-left: 10px;
+        font-family: "ptmono";
+        font-size: 32px;
+  
+        @media only screen and (max-width: 767px) {
+          font-size: 18px;
+        }
+      }
+  
+      button {
+        width: 20%;
+        padding: 10px;
+        background-color: #76bbca;
+        border-radius: 6px;
+        border: 1px solid #E5E5E5;
+        color: #fff;
+        font-size: 1.5vw;
+        font-family: 'pressstart2p';
+        cursor: pointer;
+      }
+  
+    }
+  
+    & .disabled {
+      background-color: #3E8898;
+      color: #eee;
+      cursor: unset;
+    }
+  }

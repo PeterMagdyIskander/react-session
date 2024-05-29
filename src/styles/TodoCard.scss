@@ -1,0 +1,53 @@
+.card-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+    cursor: pointer;
+    background-color: #162041;
+    margin: 18px auto;
+    padding: 0 18px;
+    border-radius: 5px;
+  
+    & .title {
+      height: 100%;
+      display: flex;
+      align-items: center;
+  
+      p {
+        font-family: 'ptmono';
+        color: #E5E5E5;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+  
+      img {
+        width: 18px;
+        height: 18px;
+        margin-right: 18px;
+      }
+      .done{
+        text-decoration: line-through;
+      }
+    }
+  
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 5px;
+  
+      button {
+        background-color: #76bbca;
+        border-radius: 6px;
+        border: 1px solid #E5E5E5;
+        color: #fff;
+        font-size: 16px;
+        font-family: 'pressstart2p';
+        cursor: pointer;
+        padding: 3px;
+      }
+    }
+  }
